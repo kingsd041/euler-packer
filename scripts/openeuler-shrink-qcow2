@@ -57,7 +57,8 @@ else
         echo "---- ${OPENEULER_IMG}.qcow2.xz already exists, skip downloading..."
     else
         echo "---- Downloading image..."
-        wget "${OPENEULER_DOWNLOAD_LINK}"
+        # wget "${OPENEULER_DOWNLOAD_LINK}"
+        wget http://10.24.12.103/openEuler-22.03-LTS-x86_64.qcow2.xz
     fi
     echo "---- Uncompressing image ..."
     unxz "${OPENEULER_IMG}.qcow2.xz"
